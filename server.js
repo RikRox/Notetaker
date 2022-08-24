@@ -103,8 +103,30 @@ app.post('/api/notes',(req, res) => {
 
 
 
+//delete function
+function deleteNote (id,notesArray){
+     for (let i = 0; i<notesArray.length; i++){
+        let note = notesArray = notesArray[i];
+
+        if (note.id == id){
+            notesArray.splice(i,1);
+            fs.writeFileSync(path.join(__dirname, './db/db.json'),JSON.stringify(notesArray,null,2));
+            break;
+        }
+        
+    // let ID = parseInt(id);
+    // notesArray.splice(ID,1);
+    //rewrite IDs for remaining notes
+    // for(let i = ID; i< notesArray)
+    
+    }
+}
 
 
+app.delete('/api/notes/:id', (req,res) => {
+    deleteNote(req.params.id , notes);
+    res.json(true);
+})
 
 
 
