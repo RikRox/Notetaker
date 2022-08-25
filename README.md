@@ -19,5 +19,27 @@
   - [Licensing](#licensing)
   - [Questions](#questions)
   
+  ## Installation Instructions
+  For this application you need node.js, express.js, and mysql.
+  
+  ## Usage Information
+  You click the link to the notes page. You then see existing notes and empty fields to enter new notes. When you press the save icon then you note will be added in the list of existing notes. When you press the trashcan it should delete the selected note.
+  
+  ### Contribution Guidelines
+  No contributions are welcomed.
+  
+  ## Tests
+  Go to the URL.
+  
+  ## Licensing
+  This project has no license which means it is under exclusive copyright by default. Nobody can copy, distribute or modify.
+
+  ## Questions
+  To see my github repository please visit my [Github repository](https://github.com/RikRox)
+  Run application at: https://peaceful-ocean-08796.herokuapp.com/
+  
+  To contact me for more questions feel free to email me at: Rikaylaj@gmail.com
+  
+  
   
   
